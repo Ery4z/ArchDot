@@ -32,7 +32,7 @@ alias dact="deactivate && export PROMPT_COMMAND=prompt_command"
 # For saving dotfile
 
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
-
+alias confupdate='config add -u;config commit -m "Update";config push'
 
 # For ls
 
