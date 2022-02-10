@@ -16,7 +16,8 @@ autoload -U promptinit && promptinit
 prompt -s adam2
 clear
 
-cat ~/.cache/neofetch
+
+neofetch
 
 # Adding venv activated
 plugins=(git virtualenv)
@@ -28,7 +29,12 @@ POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status virtualenv)
 alias act="unset PROMPT_COMMAND && source ./venv/bin/activate" 
 alias dact="deactivate && export PROMPT_COMMAND=prompt_command"
 
-
 # For saving dotfile
 
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+
+
+# For ls
+
+alias ls='ls --color=auto'
+alias la='ls -a'
